@@ -1,0 +1,201 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>180 Degrees Consulting ARSD</title>
+    <link rel="icon" type="image/png" href="/media/images/64997a976903a25535a07c4f_180DC_20Expand_20Crop.png">
+    <link rel="stylesheet" href = "loader.css">
+    <link rel="stylesheet" href = "index.css">
+    <link rel="stylesheet" href = "indexResponsive.css">
+    <link rel="stylesheet" href="./GSAPCode.css">
+    <link rel="stylesheet" href="./footer.css">
+
+    <!-- "League Spartan", sans-serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- "Montserrat", sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- "Libre Baskerville", serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <svg width="0" height="0">
+        <filter id="liquid-distortion">
+            <feTurbulence type="turbulence" baseFrequency="0.01 0.02" numOctaves="2" seed="2" result="noise"/>
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+        </filter>
+
+        <filter id="core-liquid">
+            <feTurbulence type="turbulence" baseFrequency="0.008 0.02" numOctaves="2" seed="3" result="noise"/>
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="12" xChannelSelector="R" yChannelSelector="G"/>
+        </filter>
+    </svg>
+
+    <div class="loader-container" id="preloader">
+        <div class="loader-wrapper">
+            <span class="loader-letter">S</span>
+            <span class="loader-letter">t</span>
+            <span class="loader-letter">r</span>
+            <span class="loader-letter">a</span>
+            <span class="loader-letter">t</span>
+            <span class="loader-letter">e</span>
+            <span class="loader-letter">g</span>
+            <span class="loader-letter">i</span>
+            <span class="loader-letter">z</span>
+            <span class="loader-letter">i</span>
+            <span class="loader-letter">n</span>
+            <span class="loader-letter">g</span>
+            <div class="loader"></div>
+        </div>
+    </div>
+
+    <div class = "panel main-div1">
+        <header>
+            <div class = "header-div">
+                <a href="\" class="logo">
+                    <img class="logo-img" src ="media/images/64997a976903a25535a07c4f_180DC_20Expand_20Crop.png">
+                </a>
+                <div class = "header-center">
+                    <a href = "#About">About Us</a>
+                    <a href = "#Clients">Clients</a>
+                    <a href = "#Initiatives">Events</a>
+                    <a href = "#Events">Initiatives</a>
+                </div>
+                <button class = "connect" href = "#connect">
+                    Connect
+                </button>
+            </div>
+        </header>
+        <div class = "text" id = "h1">
+            <h1 class = "h1" id ="h1"><span class = "text-highlight">180DC</span> ARSD</h1>
+        </div>
+    </div>
+        <main>
+            <div class="panel main-div2 animation-section background">
+                <!-- Using common classes to minimize redundancy -->
+                <span class="ball"></span>
+                <span class="ball"></span>
+                <span class="ball"></span>
+                <span class="ball"></span>
+                <span class="ball"></span>
+                <span class="ball"></span>
+                
+                <div class="core-text-wrapper">
+                    <h1 class="animated-text">Meet Our Core Team</h1>
+                </div>
+
+                <!-- Glow edge -->
+                <div class="edge-glow"></div>
+            </div>
+
+
+            <div class = "panel main-div3">
+                <div class="carousel">
+                    <div class="carousel-images"></div>
+                </div>
+
+                <div class="slider-controls">
+                    <button class="control-btn prev-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                            <path d="M15 6l-6 6 6 6" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+
+
+                    <button class="control-btn next-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 6l6 6-6 6" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+
+                </div>
+
+                <svg
+                    viewBox="0000"
+                    aria-hidden="true"
+                    style="position: absolute; z-index: 1; opacity: 0"
+                    >
+                    <defs>
+                        <filter id="blur-matrix">
+                            <feColorMatrix
+                                in="SourceGraphic"
+                                type="matrix"
+                               values="1 0 0 0 0 
+                                        0 1 0 0 0 
+                                        0 0 1 0 0 
+                                        0 0 0 1 0"
+
+                            ></feColorMatrix>
+                        </filter>
+                    </defs>
+                </svg>
+                
+            </div>
+
+
+            <div class = "panel main-div4">
+            
+            </div>
+
+            <div class="panel main-div5 footer-section">
+
+                <!-- Background Video -->
+                <video class="footer-video" autoplay muted loop playsinline>
+                    <source src="media/videos/vecteezy_orange-and-blue-stair-strobe-background-vj-loop-in-4k_45715246(1).mp4" type="video/mp4">
+                </video>
+
+                <!-- Overlay (for readability + blend) -->
+                <div class="footer-overlay"></div>
+
+                <!-- Main Big Text -->
+                <div class="footer-main-text">
+                    &copy;2026 @180DC
+                </div>
+
+                <!-- Bottom Left – Socials -->
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/180dc.arsd?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram">
+                        <!-- IG SVG here -->
+                        <img src="./media/images/instagram-1-svgrepo-com.svg" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/company/180-degrees-consulting-atma-ram-sanatan-dharma-college/" target="_blank" aria-label="LinkedIn">
+                        <img src="media/images/linkedin-svgrepo-com (1).svg" alt="LinkedIn">
+                    </a>
+                    <a href="https://180dc.org" target="_blank" aria-label="Website">
+                        <img src="/media/images/64997a976903a25535a07c4f_180DC_20Expand_20Crop.png" alt="Website">
+                    </a>
+                </div>
+
+                <!-- Bottom Center – Credit -->
+                <div class="footer-credit">
+                    Coded by <a href="https://www.linkedin.com/in/shrey01stark" target="_blank">@Shrey.</a> Design by @Avish &amp; @Sarthak
+                </div>
+
+                <!-- Bottom Right – Back to Top -->
+                <div class="footer-backtotop">
+                    <span>↑ Back to top</span>
+                </div>
+
+            </div>
+
+
+        </main>
+        
+        <footer class="main-div7">
+           
+        </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js" integrity="sha512-wOeEC+9qERAzhliwBFPDb6t8TiFFxdxG8vhK/Ygs7TuC44bpg8pg/X2/U/u+0X4fK05wb9id1EIipnF02+CFQw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/CustomEase.min.js" integrity="sha512-CuvnoNrIlhT8htAhjvvnA7EB4sUHfRvfFsjq+JvAKPotN8LlelK/lQgX+u9Gxxsl0+lXmEWRMLPv/oKT1W3dPw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js" defer></script>
+    <div class="custom-cursor"></div>
+</body>
+</html>
