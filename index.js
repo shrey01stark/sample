@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         clearInterval(interval);
                     }
 
-                    iteration += 0.4;
+                    iteration += 0.8;
                 }, 30);
             });
 
@@ -522,3 +522,4 @@ backToTop.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+
