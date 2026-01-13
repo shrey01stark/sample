@@ -1,0 +1,146 @@
+/* =========================
+   FOOTER SECTION
+========================= */
+
+.footer-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+/* Background video */
+.footer-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    filter: blur(12px);
+    transform: scale(1.05);
+}
+
+/* Soft overlay for readability */
+.footer-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.45)
+    );
+    z-index: 1;
+}
+
+/* Main big text */
+.footer-main-text {
+    position: absolute;
+    bottom: 12%;
+    left: 5%;
+    font-family: "Libre Baskerville", serif;
+    font-size: clamp(1.5rem, 10vw, 12rem);
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    color: white;
+    z-index: 2;
+    mix-blend-mode: difference; /* THIS is what gives opposite color effect */
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+/* Bottom Left – Socials */
+.footer-socials {
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
+    display: flex;
+    gap: 1.2rem;
+    z-index: 3;
+}
+
+.footer-socials a img {
+    width: 28px;
+    height: 28px;
+    filter: invert(1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-socials a:hover img {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+/* Bottom Center – Credit */
+.footer-credit {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    color: white;
+    z-index: 3;
+    opacity: 0.8;
+}
+
+.footer-credit a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+.footer-credit a:hover {
+    opacity: 1;
+}
+
+/* Bottom Right – Back to Top */
+.footer-backtotop {
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    color: white;
+    cursor: pointer;
+    z-index: 3;
+    opacity: 0.85;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-backtotop:hover {
+    transform: translateY(-3px);
+    opacity: 1;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .footer-main-text {
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        margin-bottom:2rem;
+    }
+
+    .footer-socials {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 10%;
+    }
+
+    .footer-credit {
+        bottom: 5%;
+    }
+
+    .footer-backtotop {
+        display: none; /* optional: hide on mobile */
+    }
+}
