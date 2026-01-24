@@ -39,23 +39,27 @@ ul{
     padding-inline-start: 0;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width:100%;
+    width: 100%;
     box-sizing: border-box;
-    height:10%;
+    height: 10%;
     padding: 0 4rem;  
-    position: absolute;
-    z-index:9999;  
-    margin-top: 2%;
+    position: fixed; /* CHANGE THIS FROM ABSOLUTE TO FIXED */
+    top: 0;          /* Ensure it starts at the top */
+    left: 0;
+    z-index: 9999;  
+    margin-top: 1rem;   /* Optional: removed margin-top for a cleaner stick */
+    transition: background 0.3s ease; /* Optional: smooth bg change */
 }
 
 .logo{
     width:15%;
     height: auto;
     object-fit: cover;
+    cursor:pointer;
 }
 
 .nav{
@@ -194,7 +198,5 @@ header{
 .hover-underline:hover::before {
   transform: scaleX(1);
 }
-
-/* rethinking deli space less */
 
 
