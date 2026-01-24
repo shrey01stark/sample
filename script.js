@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const header = document.querySelector('header');
 const showAnim = gsap.from(header, { 
-  yPercent: -100,
+  yPercent: -120,
   paused: true,
   duration: 0.3
 }).progress(1);
@@ -55,3 +55,17 @@ ScrollTrigger.create({
   }
 });
 
+/*
+ JS to toggle scroll axis styles
+*/
+const control = document.getElementById("direction-toggle");
+const marquees = document.querySelectorAll(".marquee");
+const wrapper = document.querySelector(".wrapper");
+
+control.addEventListener("click", () => {
+  control.classList.toggle("toggle--vertical");
+  wrapper.classList.toggle("wrapper--vertical");
+  [...marquees].forEach((marquee) =>
+    marquee.classList.toggle("marquee--vertical")
+  );
+});

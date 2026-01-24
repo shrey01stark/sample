@@ -54,8 +54,7 @@
   .mob-ul { 
     list-style: none;
     margin: 0;
-    padding: 0;
-    margin-left: auto; 
+    padding: 0; 
     margin-right: auto;
     background: rgba(39, 183, 53, 0.082);
     backdrop-filter: blur(8px);
@@ -70,6 +69,7 @@
     padding: .4rem 2rem;
     border-radius: 10px;
     box-shadow: 0 10px 50px 0 rgba(olivedrab, .25);
+   
   }
 
   .mob-li + .mob-li {
@@ -169,7 +169,7 @@
     height: 0; /* START AT 0 */
     backdrop-filter: blur(15px);
     overflow: hidden;
-    transition: height 0.5s ease-in-out; /* YOUR 1.5s ANIMATION */
+    transition: height 0.4s ease-in-out; /* YOUR 1.5s ANIMATION */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -180,7 +180,16 @@
   .mob-header.open {
     height: 90%; 
     pointer-events: all;
+  }
 
+  .mob-header div{
+    display: flex;
+    justify-content: start;
+    width:100%;
+    gap:2rem;
+    align-items: center;
+    white-space: nowrap;
+    
   }
   
   
@@ -212,6 +221,10 @@
   .text p{
     font-size: 0.9rem;
     line-height: 1.3rem;
+  }
+
+  .text button{
+    padding: 0.5rem 1.5rem;
   }
 
 }
