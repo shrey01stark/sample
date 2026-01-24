@@ -46,7 +46,7 @@
   <link rel="manifest" href="./assets/img/site.webmanifest">
 
   <meta name="application-name" content="180DC ARSD">
-  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="180DC ARSD">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,36 +57,109 @@
 	<script>AOS.init();</script>
 
 	<link rel="stylesheet" href="./responsive.css">
+	<link rel="stylesheet" href="./assets/loader.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	
+
 
 </head>
 <body>
+	<div class="loader-container" id="preloader">
+        <div class="loader-wrapper">
+            <span class="loader-letter">S</span>
+            <span class="loader-letter">t</span>
+            <span class="loader-letter">r</span>
+            <span class="loader-letter">a</span>
+            <span class="loader-letter">t</span>
+            <span class="loader-letter">e</span>
+            <span class="loader-letter">g</span>
+            <span class="loader-letter">i</span>
+            <span class="loader-letter">z</span>
+            <span class="loader-letter">i</span>
+            <span class="loader-letter">n</span>
+            <span class="loader-letter">g</span>
+            <div class="loader"></div>
+        </div>
+    </div>
+
 	<header>
+		<button id="menuTrigger" class="hamburger-menu">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+    	</button>
 
 		<img class="logo" src="./assets/img/Main(4).png">
 
+		
 		<div class="nav">
 			<ul>
-				<li class="hover-underline">Home</li>
-				<li class="hover-underline">About Us</li>
-				<li class="hover-underline">Our Clients</li>
-				<li class="hover-underline">Events</li>
-				<li class="hover-underline">Initiatives</li>
-				<li class="hover-underline">R&amp;D</li>
+			<li class="hover-underline">Home</li>
+			<li class="hover-underline">About Us</li>
+			<li class="hover-underline">Our Clients</li>
+			<li class="hover-underline">Events</li>
+			<li class="hover-underline">Initiatives</li>
+			<li class="hover-underline">R&D</li>
 			</ul>
 		</div>
+
+
 		<a href="/" class="feh-shiny-button">
 			<div class="feh-border-mask">
-				<div class="feh-border-glow"></div>
+			<div class="feh-border-glow"></div>
 			</div>
 			Contact Us!
 		</a>
 
 	</header>
 
+	<div class="mob-header">
+		<ul class="mob-ul">  
+
+			<li class="mob-li">
+			<a href="#" class="mob-a">
+				<i class="fa-solid fa-house"></i>
+				<span class="mob-span">Home</span>
+			</a>
+			</li>  
+
+			<li class="mob-li">
+			<a href="#" class="mob-a">
+				<i class="fa-solid fa-users"></i>
+				<span class="mob-span">About Us</span>
+			</a>
+			</li>
+
+			<li class="mob-li">
+			<a href="#" class="mob-a">
+				<i class="fa-solid fa-handshake"></i>
+				<span class="mob-span">Our Clients</span>
+			</a>
+			</li>
+
+			<li class="mob-li">
+			<a href="#" class="mob-a">
+				<i class="fa-solid fa-calendar-days"></i>
+				<span class="mob-span">Events</span>
+			</a>
+			</li>
+
+			<li class="mob-li">
+			<a href="#" class="mob-a">
+				<i class="fa-solid fa-diagram-project"></i>
+				<span class="mob-span">Initiatives</span>
+			</a>
+			</li>
+
+		</ul>
+	</div>
+
+
 	<section id="home" class="home">
 		<img src="./assets/img/home.png">
-			<div class="text">
-				<h2>Rethinking Problems</h2>
+			<div class="text typewriter">
+				<h2>Rethinking Problems  </h2>
 				<h1>DELIVERING <span style="color:#83bc3d">IMPACT</span></h1>
 				<div class="line"></div>
 				<h3 style="color:#83bc3d">Student-led consulting for real-world challenges.</h3>
@@ -94,13 +167,17 @@
 			</div>
 	</section>
 
-	<section id="home2" class="home2" style="background-color:white;">
+	<section id="home2" class="home2" style="background-color:rgb(21, 21, 21);">
 
 	</section>
 
 	<section id="home3" class="home3" style="background-color:black;">
 
 	</section>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js" integrity="sha512-wOeEC+9qERAzhliwBFPDb6t8TiFFxdxG8vhK/Ygs7TuC44bpg8pg/X2/U/u+0X4fK05wb9id1EIipnF02+CFQw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/CustomEase.min.js" integrity="sha512-CuvnoNrIlhT8htAhjvvnA7EB4sUHfRvfFsjq+JvAKPotN8LlelK/lQgX+u9Gxxsl0+lXmEWRMLPv/oKT1W3dPw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="./script.js" defer></script>
 </body>
 </html>
