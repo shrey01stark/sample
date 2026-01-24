@@ -169,7 +169,7 @@
     height: 0; /* START AT 0 */
     backdrop-filter: blur(15px);
     overflow: hidden;
-    transition: height 1s ease-in-out; /* YOUR 1.5s ANIMATION */
+    transition: height 0.5s ease-in-out; /* YOUR 1.5s ANIMATION */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -193,4 +193,5 @@
 /* Hide button on desktop */
 @media (min-width: 1111px) {
   .hamburger-menu { display: none; }
+
 }
