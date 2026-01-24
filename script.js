@@ -9,7 +9,7 @@ setTimeout(function() {
     preloader.classList.add("loader-hidden");
     // Re-enable scrolling
     document.body.style.overflow = "auto";
-}, 2000); // 3 seconds
+}, 1000); // 3 seconds
 });
 
 document.addEventListener('DOMContentLoaded', () => {
