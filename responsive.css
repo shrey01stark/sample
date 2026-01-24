@@ -36,7 +36,7 @@
 }  
 
   .feh-shiny-button{
-    padding: 0.8rem 1rem;
+    padding: 0.6rem 1rem;
   }
 
   .mob-header{
@@ -193,5 +193,25 @@
 /* Hide button on desktop */
 @media (min-width: 1111px) {
   .hamburger-menu { display: none; }
+}
+
+@media (max-width: 600px){
+  .logo{
+    visibility: hidden;
+    display: hidden;
+  }
+
+  header{
+    padding: 0 2rem;
+  }
+
+  .text{
+    padding: 4rem 2.5rem;
+  }
+
+  .text p{
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
 
 }
